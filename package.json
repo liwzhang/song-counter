@@ -1,0 +1,28 @@
+{
+  "name": "song-counter",
+  "version": "1.0.0",
+  "description": "A program to count number of plays for songs on Spotify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liwzhang/song-counter.git"
+  },
+  "keywords": [
+    "spotify",
+    "song",
+    "counter",
+    "track"
+  ],
+  "author": "Emily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liwzhang/song-counter/issues"
+  },
+  "homepage": "https://github.com/liwzhang/song-counter#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
