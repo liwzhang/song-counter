@@ -1,3 +1,3 @@
 # Spotify Song Counter
 
-A program that shows number plays for user's songs on Spotify.
+A program that shows number plays for a user's songs on Spotify.
