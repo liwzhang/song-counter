@@ -1,3 +1,3 @@
 # Spotify Song Counter
 
-A program to count number of plays for songs on Spotify.
+A program that shows number plays for songs on Spotify.
