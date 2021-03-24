@@ -4,6 +4,9 @@ const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
 const query = require("query-string");
+const cron = require("node-cron");
+
+// config
 const PORT = process.env.PORT || 8000;
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
@@ -72,7 +75,12 @@ app.get("/songs", (req, res) => {
   res.send("Your Spotify songs.");
 });
 
+const job = cron.schedule("*/3 * * * *", () => {
+  console.log("running every 3 minutes ", Date.now().toLocaleString);
+});
+
 // start server
 app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`);
+  console.log(Date.now().toLocaleString);
 });
