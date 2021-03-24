@@ -5,14 +5,12 @@ const cors = require("cors");
 const axios = require("axios");
 const query = require("query-string");
 const cron = require("node-cron");
-const { LocalStorage } = require("node-localstorage");
 
 // config
 const PORT = process.env.PORT || 8000;
 const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.CLIENT_SECRET;
 const redirectUri = `http://localhost:${PORT}/api/user`;
-const localStorage = new LocalStorage("./scratch");
 
 const app = express();
 

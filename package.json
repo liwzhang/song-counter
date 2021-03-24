@@ -29,7 +29,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "node-cron": "^3.0.0",
-    "node-localstorage": "^2.1.6",
     "query-string": "^7.0.0"
   },
   "devDependencies": {
